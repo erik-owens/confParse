@@ -12,11 +12,6 @@ require_once('confParse.php');
 $conf_handler = new confParse();
 $error = $conf_handler->parse('./conf/site1.conf');
 
-
-
-
-
-
 if ( isset($error) && strlen($error) > 0 ) {
     //error_log( "confParse finished with err=({$error})\n\n");
     echo "confParse finished with err=({$error})\n\n";
