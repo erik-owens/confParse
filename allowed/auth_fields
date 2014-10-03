@@ -1,0 +1,9 @@
+host
+server_id
+server_load_alarm
+user
+verbose
+test_mode
+debug_mode
+log_file_path
+send_notifications
