@@ -10,7 +10,12 @@ require_once('confParse.php');
 
 //Test for site1.conf
 $conf_handler = new confParse();
-$error = $conf_handler->parse('./conf/site3.conf');
+$error = $conf_handler->parse('./conf/site1.conf');
+
+
+
+
+
 
 if ( isset($error) && strlen($error) > 0 ) {
     //error_log( "confParse finished with err=({$error})\n\n");
