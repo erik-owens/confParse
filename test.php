@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
-require_once('confParse.php');
+require_once('parseConf.php');
 
 //Test for site1.conf
-$conf_handler = new confParse();
+$conf_handler = new parseConf();
 $error = $conf_handler->parse('./conf/site1.conf');
 
 if ( isset($error) && strlen($error) > 0 ) {
